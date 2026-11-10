@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#05070d">
+  <meta name="description" content="NEXUS — The human future, engineered. An immersive cyborg interface concept.">
+  <title>NEXUS — The Human Future, Engineered</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script type="importmap">
+    {"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js"}}
+  </script>
+</head>
+<body>
+  <div class="noise"></div>
+  <div class="cursor-glow" aria-hidden="true"></div>
+  <header class="header">
+    <a class="brand" href="#top"><span class="brand-symbol">N</span><span>NEXUS<span class="cyan">/</span></span></a>
+    <nav class="nav" id="nav"><a href="#systems">SYSTEMS</a><a href="#interface">INTERFACE</a><a href="#manifesto">MANIFESTO</a></nav>
+    <a class="header-cta" href="#connect">ENTER THE FUTURE <span>↗</span></a>
+    <button class="menu" aria-label="Toggle menu" aria-expanded="false">☰</button>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-grid"></div>
+      <div class="hero-copy">
+        <div class="eyebrow"><i></i> NEXUS INDUSTRIES <span>—</span> RESEARCH DIVISION 09</div>
+        <p class="hero-kicker">THE HUMAN FUTURE, ENGINEERED.</p>
+        <h1>EVOLVE<br>BEYOND<br><em>LIMITS.</em></h1>
+        <p class="hero-desc">Not human versus machine. Human <b>with</b> machine. A new interface for the next era of intelligence, creativity and possibility.</p>
+        <div class="hero-buttons"><a class="btn-main" href="#systems">EXPLORE THE SYSTEM <span>↗</span></a><a class="btn-play" href="#interface"><span>↓</span> DISCOVER THE NEXUS</a></div>
+        <div class="hero-metrics">
+          <div><strong data-count="240">0</strong><small>% NEURAL RESPONSE</small></div>
+          <div><strong data-count="2">0<span class="small-unit">ms</span></strong><small>SYNC LATENCY</small></div>
+          <div><strong>∞</strong><small>HUMAN POTENTIAL</small></div>
+        </div>
+      </div>
+      <div class="hero-stage">
+        <canvas id="cyborg-canvas" aria-label="Interactive 3D cyborg head"></canvas>
+        <div class="stage-vignette"></div>
+        <div class="hud hud-top"><span>SUBJECT / 001</span><b><i></i> ONLINE</b></div>
+        <div class="hud hud-left"><span>NEURAL LINK</span><b>ESTABLISHED</b><div class="hud-bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></div>
+        <div class="hud hud-bottom"><span>BIOMETRIC SYNC</span><b>99.98%</b></div>
+        <div class="stage-cross cross-a">＋</div><div class="stage-cross cross-b">＋</div>
+        <div class="stage-caption">FIG 01 — SYNTHETIC HUMAN INTERFACE</div>
+      </div>
+      <div class="hero-scroll"><span>SCROLL TO INITIATE</span><i></i><span>01 / 04</span></div>
+    </section>
+
+    <section class="ticker"><div class="ticker-track"><span>HUMAN POTENTIAL</span><b>✳</b><span>INTELLIGENCE AMPLIFIED</span><b>✳</b><span>DESIGNED FOR TOMORROW</span><b>✳</b><span>HUMAN POTENTIAL</span><b>✳</b><span>INTELLIGENCE AMPLIFIED</span><b>✳</b><span>DESIGNED FOR TOMORROW</span><b>✳</b></div></section>
+
+    <section class="systems section" id="systems">
+      <div class="section-top reveal"><div><div class="eyebrow">01 / CORE SYSTEMS</div><h2>MORE THAN<br><span>AN UPGRADE.</span></h2></div><p>Three interconnected technologies. One radically human outcome. Every system is designed to expand what you can do without changing who you are.</p></div>
+      <div class="system-grid">
+        <article class="system-card system-feature reveal"><div class="card-top"><span>01 — COGNITION</span><b>⌁</b></div><div class="card-art brain-art"><div class="brain-core"></div><i></i><i></i><i></i><i></i></div><h3>THINK<br>WITHOUT EDGES.</h3><p>A seamless neural bridge that turns intention into action with intuitive, low-latency connection.</p><a href="#connect" aria-label="Explore cognition">↗</a></article>
+        <article class="system-card reveal"><div class="card-top"><span>02 — ADAPTATION</span><b>◈</b></div><div class="card-art adapt-art"><div class="adapt-orb"></div><div class="adapt-ring"></div></div><h3>BUILT TO<br>EVOLVE.</h3><p>Adaptive systems that respond to your environment and grow with every experience.</p><a href="#connect" aria-label="Explore adaptation">↗</a></article>
+        <article class="system-card reveal"><div class="card-top"><span>03 — CONNECTION</span><b>⌬</b></div><div class="card-art connect-art"><div class="connect-wave"></div><div class="connect-wave"></div><div class="connect-wave"></div></div><h3>NEVER OUT<br>OF SYNC.</h3><p>Human-centered technology that keeps your identity, privacy and agency at the core.</p><a href="#connect" aria-label="Explore connection">↗</a></article>
+      </div>
+    </section>
+
+    <section class="interface section" id="interface">
+      <div class="interface-visual reveal"><div class="interface-orbit orbit-a"></div><div class="interface-orbit orbit-b"></div><div class="interface-core"><span>N</span><i>+</i></div><div class="interface-tag">CONNECTION ESTABLISHED<br><b>YOU ARE THE INTERFACE.</b></div><div class="interface-coord">34° 03' 12.4" N<br>FUTURE / EVERYWHERE</div></div>
+      <div class="interface-copy reveal"><div class="eyebrow">02 / THE NEXUS PROTOCOL</div><h2>TECHNOLOGY<br>THAT FEELS<br><em>LIKE YOU.</em></h2><p>We believe the future should feel less like operating a machine and more like discovering a new part of yourself. Your identity stays yours. Your choices stay yours. Your potential gets a new horizon.</p><div class="protocol-list"><div><span>01</span> HUMAN BY DESIGN <b>↗</b></div><div><span>02</span> PRIVATE BY DEFAULT <b>↗</b></div><div><span>03</span> LIMITLESS BY NATURE <b>↗</b></div></div></div>
+    </section>
+
+    <section class="manifesto" id="manifesto"><div class="manifesto-inner reveal"><div class="eyebrow">03 / THE NEXUS MANIFESTO</div><h2>THE FUTURE ISN'T<br><span>HUMAN OR MACHINE.</span><br>IT'S WHAT WE CREATE<br><em>TOGETHER.</em></h2><div class="manifesto-bottom"><span>DESIGNED FOR THE HUMAN ERA.</span><span>EST. 2089 — EARTH / EVERYWHERE</span></div></div></section>
+
+    <section class="connect section" id="connect"><div class="connect-copy reveal"><div class="eyebrow">04 / YOUR NEXT CHAPTER</div><h2>THE FUTURE<br>IS <em>CALLING.</em></h2><p>Every evolution begins with a question. What will you become?</p></div><a class="connect-button reveal" href="mailto:hello@nexus.example"><span>INITIATE CONTACT</span><b>↗</b></a></section>
+  </main>
+  <footer class="footer"><a class="brand" href="#top"><span class="brand-symbol">N</span><span>NEXUS<span class="cyan">/</span></span></a><span>© 2089 NEXUS INDUSTRIES. CONCEPT EXPERIENCE.</span><a href="#top">BACK TO TOP ↑</a></footer>
+  <script src="script.js"></script>
+  <script type="module" src="cyborg.js"></script>
+</body>
+</html>
